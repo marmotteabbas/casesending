@@ -20,7 +20,10 @@ define(['jquery'], function() {
         if (cas == 4) {
           callstr = "<a href='javascript:require(["+'"local_casesending/call"]'+", function(amd) {amd.call(4);});;'><i class='icon fa fa-envelope-o fa-fw ' aria-hidden='true'></i>Contacter l’assistance du site</a>"
         }
-        $(".footer-support-link:nth-child(3)").html(callstr);
+        //$(".footer-support-link:nth-child(3)").html(callstr);
+        $( ".footer-support-link" ).each(function( index ) {
+          if($( this ).html().includes("contactsitesupport.php")) {$( this ).first().html(callstr);}
+        });
       };
     return {
         launch: launch
