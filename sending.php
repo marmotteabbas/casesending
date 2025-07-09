@@ -23,7 +23,6 @@ $concernedActivities = optional_param('concerned_activities', 0, PARAM_RAW);
 $fichier = optional_param('fichier', 0, PARAM_RAW);
 $fpfilecheck = optional_param('fpfilecheck', 0, PARAM_RAW);
 
-$subject = "Sujet";
 $messagetext ="Nom et Prénom : $names <br />
 Email : $email <br />
 Url de provenance : $urlfrom <br />
