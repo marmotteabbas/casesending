@@ -62,6 +62,12 @@ if ($hassiteconfig) {
                                                     get_string('banner4', 'local_casesending'),
                                                     get_string('banner4Explain', 'local_casesending'),
                                                     $default));
-
+    $settings->add(new admin_setting_configtext(
+        'local_casesending/recipientemail',
+        get_string('recipientemail', 'local_casesending'),
+        get_string('recipientemail_desc', 'local_casesending'),
+        'assistance@exemple.fr', // Valeur par défaut
+        PARAM_EMAIL
+    ));    
     $ADMIN->add('localplugins', $settings);
 }
