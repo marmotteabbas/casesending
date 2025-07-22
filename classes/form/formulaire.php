@@ -50,11 +50,11 @@ class formulaire extends moodleform {
 
         $mform =& $this->_form;
 
-        $attributes_name=array('value'=>$USER->firstname.' '.$USER->lastname, "disabled" => "disabled");
+        $attributes_name=array('value'=>$USER->firstname.' '.$USER->lastname, "readonly" => "readonly");
         $mform->addElement('text', 'name', get_string('name_form_label', 'local_casesending'), $attributes_name);
         $mform->addRule('name', get_string('name_form_label', 'local_casesending'), 'required',  null, 'client');
 
-        $attributes_mail=array('value'=>$USER->email, "disabled" => "disabled");
+        $attributes_mail=array('value'=>$USER->email, "readonly" => "readonly");
         $mform->addElement('text', 'email', get_string('email_form_label', 'local_casesending'), $attributes_mail);
         $mform->addRule('email',get_string('email_form_label', 'local_casesending'), 'required',  null, 'client');
         
