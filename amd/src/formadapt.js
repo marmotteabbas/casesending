@@ -1,4 +1,4 @@
-define(['jquery'], function() {
+define(['jquery'], function($) {
     var formadapt = function() {
         $( "#id_course_list" ).change( "select", function() {
             $.ajax({

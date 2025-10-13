@@ -1,4 +1,4 @@
-define(['jquery'], function() {
+define(['jquery'], function($) {
       var launch = function(cas) {
 
         if (cas == 0) {

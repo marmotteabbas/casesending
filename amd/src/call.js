@@ -1,4 +1,4 @@
-define(['jquery'], function() {
+define(['jquery'], function($) {
     var call = function(cas) {
         if (cas == 0) {
             currentUrl = window.location.href;
