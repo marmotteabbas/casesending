@@ -7,7 +7,8 @@ global $DB;
 define("SITE_NAME", "MOODLE UGA"); // I added that
 
 $emailuser = new stdClass();
-$emailuser->email = "florent.paccalet@grenet.fr";//"sos-dapi@univ-grenoble-alpes.fr";
+$recipientemail = get_config('local_casesending', 'recipientemail');
+$emailuser->email = $recipientemail;
 $emailuser->id = -99;
 
 
