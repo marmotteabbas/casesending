@@ -45,3 +45,7 @@ $string["banner2Explain"] = 'Ici, vous saisissez les informations qui doivent ê
 $string["banner3Explain"] = 'Ici, vous saisissez les informations qui doivent être affichées dans la banière d\'information n°3.';
 $string["banner4Explain"] = 'Ici, vous saisissez les informations qui doivent être affichées dans la banière d\'information n°4.';
 $string["messagedestination"] = 'Destinataire du message';
+$string["mailINP"] = 'Mail INP';
+$string["mailIEP"] = 'Mail IEP';
+$string["mailUGA"] = 'Mail UGA';
+$string["mailVALENCE"] = 'Mail VALENCE';

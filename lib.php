@@ -27,23 +27,24 @@
    $PAGE->requires->js_call_amd('local_casesending/call');
 
    $user_case_text = 0;
+   $values = get_config('local_casesending');
 
-   if (strpos($USER->email,'@etu.univ-grenoble-alpes.fr') !== false) {
+   if (strpos($USER->email, $values->mailUGA/*'@etu.univ-grenoble-alpes.fr'*/) !== false) {
      //$user_case_text = $values->infobanner3content;
      $user_case_text = 3;
    }
 
-   if (strpos($USER->email, '@etu.grenoble-inp.fr') !== false) {
+   if (strpos($USER->email, $values->mailINP /*'@etu.grenoble-inp.fr'*/) !== false) {
      //$user_case_text  =$values->infobanner1content;
      $user_case_text = 1;
    }
 
-   if (strpos($USER->email, '@etu.sciencespo-grenoble.fr') !== false) {
+   if (strpos($USER->email, $values->mailIEP /*'@etu.sciencespo-grenoble.fr'*/) !== false) {
      //$user_case_text = $values->infobanner2content;
      $user_case_text = 2;
    }
 
-   if (strpos($USER->email, '@univ-smb.fr') !== false) {
+   if (strpos($USER->email, $values->mailVALENCE /*'@univ-smb.fr'*/) !== false) {
      $user_case_text = 4;
      //$user_case_text ="savoie";
    }

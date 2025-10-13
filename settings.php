@@ -44,12 +44,16 @@ if ($hassiteconfig) {
                                                     get_string('banner1Explain', 'local_casesending'),
                                                     $default));
 
+    $settings->add(new admin_setting_configtext('local_casesending/mailINP', get_string('mailINP', 'local_casesending'), '', '@etu.grenoble-inp.fr'));
+
     $settings->add(new admin_setting_heading('local_casesending/title_2', get_string('PopIEP', 'local_casesending'), ''));
 
     $settings->add(new admin_setting_configtextarea('local_casesending/infobanner2content',
                                                     get_string('banner2', 'local_casesending'),
                                                     get_string('banner2Explain', 'local_casesending'),
                                                     $default));
+
+    $settings->add(new admin_setting_configtext('local_casesending/mailIEP', get_string('mailIEP', 'local_casesending'), '', '@etu.sciencespo-grenoble.fr'));
 
     $settings->add(new admin_setting_heading('local_casesending/title_3', get_string('PopUGA', 'local_casesending'), ''));
 
@@ -58,12 +62,17 @@ if ($hassiteconfig) {
                                                     get_string('banner3Explain', 'local_casesending'),
                                                     $default));
 
+    $settings->add(new admin_setting_configtext('local_casesending/mailUGA', get_string('mailUGA', 'local_casesending'), '', '@etu.univ-grenoble-alpes.fr'));
+
+
     $settings->add(new admin_setting_heading('local_casesending/title_4', get_string('PopVALENCE', 'local_casesending'), ''));
 
     $settings->add(new admin_setting_configtextarea('local_casesending/infobanner4content',
                                                     get_string('banner4', 'local_casesending'),
                                                     get_string('banner4Explain', 'local_casesending'),
                                                     $default));
+
+   $settings->add(new admin_setting_configtext('local_casesending/mailVALENCE', get_string('mailVALENCE', 'local_casesending'), '', '@univ-smb.fr'));
 
     $ADMIN->add('localplugins', $settings);
 }
