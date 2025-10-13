@@ -46,3 +46,4 @@ $string["banner1Explain"] = 'Here, fill the informations that must be displayed 
 $string["banner2Explain"] = 'Here, fill the informations that must be displayed in the information banner n°2.';
 $string["banner3Explain"] = 'Here, fill the informations that must be displayed in the information banner n°3.';
 $string["banner4Explain"] = 'Here, fill the informations that must be displayed in the information banner n°4.';
+$string["messagedestination"] = 'Message Destination';

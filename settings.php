@@ -35,6 +35,8 @@ if ($hassiteconfig) {
             1
         ));
 
+    $settings->add(new admin_setting_configtext('local_casesending/messagedestination', get_string('messagedestination', 'local_casesending'), '', "sos-dapi@univ-grenoble-alpes.fr"));
+
     $settings->add(new admin_setting_heading('local_casesending/title_1', get_string('PopINP', 'local_casesending'), ''));
 
     $settings->add(new admin_setting_configtextarea('local_casesending/infobanner1content',

@@ -44,3 +44,4 @@ $string["banner1Explain"] = 'Ici, vous saisissez les informations qui doivent ê
 $string["banner2Explain"] = 'Ici, vous saisissez les informations qui doivent être affichées dans la banière d\'information n°2.';
 $string["banner3Explain"] = 'Ici, vous saisissez les informations qui doivent être affichées dans la banière d\'information n°3.';
 $string["banner4Explain"] = 'Ici, vous saisissez les informations qui doivent être affichées dans la banière d\'information n°4.';
+$string["messagedestination"] = 'Destinataire du message';
