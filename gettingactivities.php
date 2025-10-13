@@ -5,6 +5,7 @@ global $DB, $CFG;
 //SELECT cm.instance, m.name FROM course_modules cm INNER JOIN modules m ON m.id = cm.module WHERE course = 1817
 
 $all_results = [];
+$all_results[] = "Aucune Activité";
 $list = $DB->get_records_sql("SELECT cm.instance, m.name FROM course_modules cm INNER JOIN modules m ON m.id = cm.module WHERE course = ".$_POST["id_option"]);
 foreach ($list as $l){
     $r = $DB->get_record_sql("SELECT name, id FROM ". $l->name ." WHERE id=".$l->instance);
