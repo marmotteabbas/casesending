@@ -53,10 +53,10 @@ echo $OUTPUT->header();
 echo "<div style='text-align: center;font-weight: bold;'>";
 	//Si l'envoie est un succés on purge la queue
 if ($success) {
-    $notificationtype = 'Envoie avec succès';
+    $notificationtype = 'Envoyé avec succès';
 	echo $notificationtype;
 } else { //sinon essaye d'afficher un message d'erreur
-        	$notificationtype = 'ECHEC de l envoie à '.$emailuser->email;
+        	$notificationtype = 'ÉCHEC de l envoi à '.$emailuser->email;
         	// No communication between Moodle and the SMTP server - no error output.
        	if (trim($smtplog) == false) {
            		$msg = "Echec sans message de log généré";
