@@ -26,6 +26,7 @@ global $PAGE, $DB;
 
 // Ensure the configurations for this site are set
 if ($hassiteconfig) {
+    $default = null;
     $settings = new admin_settingpage('local_casesending', 'Case Sending');
 
     $settings->add(new admin_setting_configcheckbox(
